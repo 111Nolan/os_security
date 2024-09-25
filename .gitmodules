@@ -1,0 +1,3 @@
+[submodule "libbpf"]
+	path = libbpf
+	url = git@gitlab.infini-ai.com:mizar/kernelmodules/libbpf.git
