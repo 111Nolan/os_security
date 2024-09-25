@@ -39,7 +39,7 @@ func (s *server) Run(ctx context.Context) error {
 	}
 	defer s.objs.Close()
 
-	kp, err := link.Kprobe("do_sys_open", s.objs.DoSysOpen, nil)
+	kp, err := link.Kprobe("do_sys_openat2", s.objs.DoSysOpenat2, nil)
 	if err != nil {
 		return err
 	}
